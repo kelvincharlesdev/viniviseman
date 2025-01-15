@@ -1,9 +1,10 @@
 import * as S from './App.styles';
+import { Header } from './containers/Header';
 
 function App() {
   return (
     <S.Teste>
-      <h1>Teste</h1>
+      <Header />
     </S.Teste>
   );
 }
