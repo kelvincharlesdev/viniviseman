@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 
 export const Header = styled.header`
+  max-width: 100%;
+  height: 78px;
+
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 24px;
-  height: 76px;
-  box-shadow: 0 0.4rem 0.8rem 0 rgba(99, 99, 99, 0.2);
+  align-items: center;
+  padding: 0 20px;
+  border-color: transparent;
+  gap: 32px;
 `;
 
 export const Logo = styled.div`
@@ -23,5 +26,10 @@ export const Menu = styled.nav`
 
   :hover {
     color: ${({ theme }) => theme.colors.neutral.medium};
+  }
+
+  @media (max-width: 540px) {
+    align-items: flex-start;
+    flex-direction: column;
   }
 `;
