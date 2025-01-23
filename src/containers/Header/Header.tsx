@@ -9,7 +9,9 @@ export const Header = () => {
 
   return (
     <S.Header>
-      <S.Logo>Viní Viseman</S.Logo>
+      <S.Logo>
+        <a href="/">Viní Viseman</a>
+      </S.Logo>
 
       {windowWidth > 768 ? (
         <NavBar />
