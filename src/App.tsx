@@ -1,9 +1,12 @@
 import * as S from './App.styles';
+import { Footer } from './containers/Footer';
 
 function App() {
   return (
     <S.Teste>
-      <h1>Teste</h1>
+      <div>header</div>
+      <div>Main</div>
+      <Footer />
     </S.Teste>
   );
 }
