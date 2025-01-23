@@ -34,7 +34,6 @@ export const Close__Modal = styled.div`
 export const Open__Modal = styled.button`
   color: ${({ theme }) => theme.colors.neutral.medium};
   font-size: ${({ theme }) => theme.fonts.size.md};
-  padding-right: 64px;
 `;
 
 export const Wrapper__Modal = styled.div`
