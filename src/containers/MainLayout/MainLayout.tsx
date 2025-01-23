@@ -1,5 +1,7 @@
+import { Outlet } from 'react-router-dom';
 import { Footer } from '../Footer';
 import * as S from './MainLayout.styles';
+import { Link } from 'react-router-dom';
 
 export const MainLayout = () => {
   return (
@@ -13,9 +15,13 @@ export const MainLayout = () => {
           width: '100%'
         }}
       >
-        Header
+        <Link to="/">Home</Link>
+        <Link to="/sobre">Sobre</Link>
+        <Link to="/comunidade">comunidade</Link>
       </header>
-      <S.Main__Content>Main</S.Main__Content>
+      <S.Main__Content>
+        <Outlet />
+      </S.Main__Content>
       <Footer />
     </S.MainLayout__Container>
   );
