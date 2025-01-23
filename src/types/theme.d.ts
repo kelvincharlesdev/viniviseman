@@ -1,50 +1,53 @@
 import 'styled-components';
 
-
 type ColorNeutral = {
-    lightest: string;
-    light: string;
-    medium: string;
+  lightest: string;
+  light: string;
+  medium: string;
+  gray: string;
+};
 
+type BackgroundColor = {
+  dark: string;
 };
 
 type FontFamily = {
-    default: string;
+  default: string;
 };
 
 type FontWeight = {
-    light: number;
-    regular: number;
-    medium: number;
-    bold: number;
+  light: number;
+  regular: number;
+  medium: number;
+  bold: number;
 };
 
 type FontSize = {
-    nano: string;
-    micro: string;
-    base: string;
-    xxs: string;
-    xs: string;
-    sm: string;
-    md: string;
-    lg: string;
-    xl: string;
-    xxl: string;
-    xxxl: string;
-    giant: string;
-    huge: string;
+  nano: string;
+  micro: string;
+  base: string;
+  xxs: string;
+  xs: string;
+  sm: string;
+  md: string;
+  lg: string;
+  xl: string;
+  xxl: string;
+  xxxl: string;
+  giant: string;
+  huge: string;
 };
 
 declare module 'styled-components' {
-    export interface DefaultTheme {
-        colors: {
-            neutral: ColorNeutral;
-        };
-        fonts: {
-            family: string;
-            weight: FontWeight;
-            size: FontSize;
-        };
-
-    }
+  export interface DefaultTheme {
+    colors: {
+      neutral: ColorNeutral;
+      background: BackgroundColor;
+    };
+    fonts: {
+      family: string;
+      weight: FontWeight;
+      size: FontSize;
+    };
+  }
 }
