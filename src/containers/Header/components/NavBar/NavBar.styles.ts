@@ -2,16 +2,9 @@ import styled from 'styled-components';
 
 export const NavBar = styled.nav`
   width: 100%;
-  flex: 1;
   display: flex;
-
+  gap: 32px;
   align-items: center;
-  justify-content: space-between;
-  font-weight: bolder;
-
-  :hover {
-    color: ${({ theme }) => theme.colors.neutral.medium};
-  }
 
   @media (max-width: 768px) {
     align-items: flex-start;
@@ -19,7 +12,13 @@ export const NavBar = styled.nav`
   }
 `;
 
-export const NavBarContent = styled.div`
+export const NavBar__Content = styled.div`
   display: flex;
+  flex-direction: column;
+  font-weight: bolder;
   gap: 32px;
+
+  :hover {
+    color: ${({ theme }) => theme.colors.neutral.medium};
+  }
 `;
