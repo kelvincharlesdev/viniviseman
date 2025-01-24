@@ -1,24 +1,25 @@
-import { ModalContent } from '../../componentes/Modal';
+import { Modal__Content } from '../../componentes/Modal';
 import { useWindowWidth } from '../../hooks/useWindowWidth';
 import * as S from './Header.styles';
+import { Logo } from './components/Logo/Logo';
 
-import { NavBar } from './components/NavBar';
+import { NavBar } from './components/NavBar/NavBar';
+import { WideScreenNav } from './components/WideScreenNav/WideScreenNav';
 
 export const Header = () => {
   const windowWidth = useWindowWidth();
 
   return (
     <S.Header>
-      <S.Logo>
-        <a href="/">Viní Viseman</a>
-      </S.Logo>
-
       {windowWidth > 768 ? (
-        <NavBar />
+        <WideScreenNav />
       ) : (
-        <ModalContent>
-          <NavBar />
-        </ModalContent>
+        <S.Mobile__Header>
+          <Logo />
+          <Modal__Content>
+            <NavBar />
+          </Modal__Content>
+        </S.Mobile__Header>
       )}
     </S.Header>
   );
