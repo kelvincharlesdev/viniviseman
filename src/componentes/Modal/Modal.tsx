@@ -9,7 +9,7 @@ interface ModalContentProps {
   children: React.ReactNode;
 }
 
-export const ModalContent = ({ children }: ModalContentProps) => {
+export const Modal__Content = ({ children }: ModalContentProps) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => setModalIsOpen(true);
