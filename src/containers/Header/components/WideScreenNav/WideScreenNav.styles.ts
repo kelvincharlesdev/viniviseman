@@ -12,7 +12,9 @@ export const WideScreenNav__Content = styled.div`
   display: flex;
   gap: 32px;
 
-  :hover {
-    color: ${({ theme }) => theme.colors.neutral.medium};
+  a {
+    &:hover {
+      color: ${({ theme }) => theme.colors.neutral.medium};
+    }
   }
 `;

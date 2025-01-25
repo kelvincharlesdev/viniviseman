@@ -18,7 +18,9 @@ export const NavBar__Content = styled.div`
   font-weight: bolder;
   gap: 32px;
 
-  :hover {
-    color: ${({ theme }) => theme.colors.neutral.medium};
+  a {
+    &:hover {
+      color: ${({ theme }) => theme.colors.neutral.medium};
+    }
   }
 `;
