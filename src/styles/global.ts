@@ -13,11 +13,12 @@ export const GlobalStyles = createGlobalStyle`
         min-height: 100vh;
     }
 
+
     button {
-        cursor: pointer;
+        all: unset;
+         display: inline-block;
         transition: 0.2s ease-out;
-        background-color: none;
-        border: none;
+        cursor: pointer;
     }
 
     input {
@@ -26,6 +27,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     a {
-        text-decoration: none;
-    }
+  text-decoration: none;
+  color: inherit;
+}
 `;
