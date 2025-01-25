@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 import * as S from './Logo.styles';
 
 export const Logo = () => {
   return (
     <S.Logo>
-      <a href="/">Viní Viseman</a>
+      <Link to="/">Viní Viseman</Link>
     </S.Logo>
   );
 };
