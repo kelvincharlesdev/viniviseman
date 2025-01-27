@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import * as S from './NavBar.styles';
+import { Button } from '../../../../componentes/Button';
 
 export const NavBar = () => {
   return (
@@ -11,7 +12,9 @@ export const NavBar = () => {
         <Link to="/solucoes">Soluções</Link>
         <Link to="/contato">Contato</Link>
       </S.NavBar__Content>
-      <button>Teste</button>
+      <S.Button__Content>
+        <Button>Clube dos CEOs</Button>
+      </S.Button__Content>
     </S.NavBar>
   );
 };
