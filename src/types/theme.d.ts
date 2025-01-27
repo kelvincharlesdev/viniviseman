@@ -5,6 +5,7 @@ type ColorNeutral = {
   light: string;
   medium: string;
   gray: string;
+  black: string;
 };
 
 type BackgroundColor = {
@@ -36,6 +37,7 @@ type FontSize = {
   xxxl: string;
   giant: string;
   huge: string;
+  xhuge: string;
 };
 
 declare module 'styled-components' {
