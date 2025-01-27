@@ -10,6 +10,7 @@ export const theme: DefaultTheme = {
       black: '#000000'
     },
     background: {
+      lightest: '#eef2ff',
       medium: '#3A86FF',
       dark: '#011627'
     }

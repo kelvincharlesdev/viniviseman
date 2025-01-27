@@ -9,6 +9,7 @@ type ColorNeutral = {
 };
 
 type BackgroundColor = {
+  lightest: string;
   medium: string;
   dark: string;
 };

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeroSection__Container = styled.div`
-  background-color: #eef2ff;
+  background-color: ${({ theme }) => theme.colors.background.lightest};
   width: 100%;
 `;
 
