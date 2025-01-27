@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Logo } from '../Logo/Logo';
 import * as S from './WideScreenNav.styles';
+import { Button } from '../../../../componentes/Button';
 
 export const WideScreenNav = () => {
   return (
@@ -15,7 +16,9 @@ export const WideScreenNav = () => {
         <Link to="/contato">Contato</Link>
       </S.WideScreenNav__Content>
 
-      <button>Teste</button>
+      <S.Button__Content>
+        <Button>Clube dos CEOs</Button>
+      </S.Button__Content>
     </S.WideScreenNav>
   );
 };

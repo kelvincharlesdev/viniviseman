@@ -18,3 +18,7 @@ export const WideScreenNav__Content = styled.div`
     }
   }
 `;
+
+export const Button__Content = styled.div`
+  width: 160px;
+`;
