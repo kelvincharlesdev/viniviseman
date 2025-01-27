@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const NavBar = styled.nav`
   width: 100%;
   display: flex;
-  gap: 32px;
+  gap: 2rem;
   align-items: center;
 
   @media (max-width: 768px) {
@@ -16,7 +16,7 @@ export const NavBar__Content = styled.div`
   display: flex;
   flex-direction: column;
   font-weight: bolder;
-  gap: 32px;
+  gap: 2rem;
 
   a {
     &:hover {

@@ -10,7 +10,7 @@ export const WideScreenNav = styled.div`
 
 export const WideScreenNav__Content = styled.div`
   display: flex;
-  gap: 32px;
+  gap: 2rem;
 
   a {
     &:hover {
