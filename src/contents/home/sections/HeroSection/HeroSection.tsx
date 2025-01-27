@@ -1,3 +1,4 @@
+import { Button } from '../../../../componentes/Button';
 import Hero from './../../../../containers/Hero';
 
 import * as S from './HeroSection.styles';
@@ -7,6 +8,7 @@ export const HeroSection = () => {
     <S.HeroSection__Container>
       <S.HeroSection__Content>
         <Hero.Wrapper>
+          {/* //TODO Remover Badge , deixei so como exemplo */}
           <Hero.Badge
             bgColor="#DBEAFE"
             color="#193CB8"
@@ -19,10 +21,13 @@ export const HeroSection = () => {
               integra todas as áreas da vida.
             </small>
           </Hero.HeroTitle>
-
           <S.Button__Content>
-            <p>Teste</p>
-            <p>Teste</p>
+            <S.Button__Primary>
+              <Button $variant="secondary">Comece sua jornada</Button>
+            </S.Button__Primary>
+            <S.Button__Outline>
+              <Button $variant="outline">Saiba mais</Button>
+            </S.Button__Outline>
           </S.Button__Content>
         </Hero.Wrapper>
       </S.HeroSection__Content>
