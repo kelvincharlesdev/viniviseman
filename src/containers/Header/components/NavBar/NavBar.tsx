@@ -13,7 +13,7 @@ export const NavBar = () => {
         <Link to="/contato">Contato</Link>
       </S.NavBar__Content>
       <S.Button__Content>
-        <Button text="Clube dos CEOs" />
+        <Button>Clube dos CEOs</Button>
       </S.Button__Content>
     </S.NavBar>
   );

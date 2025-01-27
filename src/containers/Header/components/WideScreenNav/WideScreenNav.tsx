@@ -17,7 +17,7 @@ export const WideScreenNav = () => {
       </S.WideScreenNav__Content>
 
       <S.Button__Content>
-        <Button text="Clube dos CEOs" />
+        <Button>Clube dos CEOs</Button>
       </S.Button__Content>
     </S.WideScreenNav>
   );
