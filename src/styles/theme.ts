@@ -6,9 +6,11 @@ export const theme: DefaultTheme = {
       lightest: '#FFFFFF',
       light: '#CAF0F8',
       medium: '#0077B6',
-      gray: '#939AA6'
+      gray: '#939AA6',
+      black: '#000000'
     },
     background: {
+      lightest: '#eef2ff',
       medium: '#3A86FF',
       dark: '#011627'
     }
@@ -34,7 +36,8 @@ export const theme: DefaultTheme = {
       xxl: '1.875rem', //30px
       xxxl: '2rem', //32px
       giant: '2.125rem', //34px
-      huge: '2.25rem' //36px
+      huge: '2.25rem', //36px
+      xhuge: '3rem' //48px
     }
   }
 };
