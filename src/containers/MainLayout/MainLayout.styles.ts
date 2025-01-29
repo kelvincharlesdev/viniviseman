@@ -11,7 +11,8 @@ export const MainLayout__Container = styled.div`
 
 export const Main__Content = styled.main`
   width: 100%;
-  height: calc(100vh - 300px);
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   margin-top: 4.875rem;
 `;
